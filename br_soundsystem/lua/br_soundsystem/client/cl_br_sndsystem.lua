@@ -1,9 +1,8 @@
 BR_SOUND_SYSTEM = {};
-BR_SOUND_SYSTEM.URL = "http://www.yourUrlHere.com/";
-// Do note, the URL must be the same domain the PHP script is on.
+
 function BR_SOUND_SYSTEM:DownloadSound(url)
 	print("Downloading sound..");
-	http.Fetch( BR_SOUND_SYSTEM.URL.."brsnd.php?sound="..url,
+	http.Fetch(url,
 		function( body, len, headers, code )
 			file.CreateDir("br_soundcache"); 
 			file.Write("br_soundcache/"..util.CRC(url)..".txt", body);
