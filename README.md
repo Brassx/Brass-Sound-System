@@ -7,6 +7,6 @@ You can always trigger the client to download your sounds ahead of time while pl
 
 How to setup:
 
-All you need to do is upload the brsnd.php script to your fast DL webhost, and change the URL in the cl_br_sndsystem.lua file to your fast DL webhost. Then you're done!
+All you need to do is upload the brsnd.php script to your webhost(the same webhost the sounds you want to play are on), and change the URL in the cl_br_sndsystem.lua file to your fast DL webhost. Then you're done!
 
 Do note, the URL must be the same domain the PHP script is on.
